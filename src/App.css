@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;500;600;700&family=Lato&family=Poppins&family=Prompt&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.sidebar {
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  border: none;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.main {
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1.5rem;
+}
+
+.mainsection-one {
+  background-color: #075985;
+  border-radius: 10px 0px 0px 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  color: #f8fafc;
+  font-size: 0.9rem;
+}
+
+.mainsection-two {
+  background-color: #f8fafc;
+  border-radius: 0px 10px 10px 0px;
+  color: #075985;
+  padding: 1.5rem;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-inputs,
+.role-inputs {
+  margin-bottom: 1rem;
+  border: none;
+  height: 1.7rem;
+  border: 1px solid #075985;
+  text-indent: 5px;
+  display: block;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar-two {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: #075985;
+}
+.sidebar-one {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: #075985;
+}
+
+.personal-info-title,
+.skills-info,
+.hobbies-info,
+.awards-info {
+  text-align: center;
+  font-weight: bold;
+}
+
+.add-skill-btn,
+.add-hobby-btn,
+.add-responsibilities-btn,
+.add-work-experience-btn,
+.add-education-btn,
+.add-award-btn {
+  background-color: #075985;
+  border: none;
+  color: #f9fafb;
+  font-size: 1rem;
+  padding: 4px 4px;
+  height: 28px;
+  width: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.skill-input-section,
+.hobbies-input-section,
+.awards-input-section,
+.summary-inf,
+.responsibilities-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-responsibilities-btn {
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+.responsibilities-info {
+  margin-top: 1rem;
+}
+.work-experience-info,
+.education-info {
+  display: flex;
+  flex-direction: column;
+}
+span {
+  display: block;
+}
+
+textarea {
+  text-indent: 5px;
+  padding: 5px;
+  display: block;
+  font-family: "Poppins", sans-serif;
+}
+
+.image {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+
+.subtitle {
+  font-weight: bold;
+}
+
+a {
+  color: #e2e8f0;
+}
+
+.name-value,
+.title-value,
+.email-value,
+.cell-value {
+  margin: 0.5rem;
+}
+
+.updated-personals {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+.personals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+ul {
+  margin: 0;
+}
+
+h4,
+h3 {
+  margin: 0.5rem;
+  margin-left: 0;
+}
+h3 {
+  margin-left: 0;
+  margin-bottom: 0.3rem;
+}
+
+.profile-summary {
+  margin: 0rem;
+  font-size: 0.9rem;
+}
+
+span {
+  display: inline;
+}
+
+hr {
+  background-color: #075985;
+  border: none;
+  height: 1px;
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #f9fafb;
+}
+
+.update {
+  background-color: #2074a1;
+  padding: 0.5em 1em;
+  width: 9em;
+  border-radius: 5px;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.update:hover {
+  background-color: #3086b4;
+}
+
+.input-update {
+  display: none;
+}
+
+#summary {
+  resize: none;
+  height: 10em;
+}
