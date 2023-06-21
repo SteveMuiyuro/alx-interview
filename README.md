@@ -36,7 +36,7 @@ Upstart script to keep the application running on server reboots.
   - [4-app_server-nginx_config](./4-app_server-nginx_config): Nginx configuration file
     that proxies requests on the AirBnB API to the corresponding Gunicorn app.
 
-- **5. Serve your AirBnB clone**
+- **5. Serve your Ping A Doctor App**
 
   - In this task, I configured the complete AirBnB app from [Ping*A* Doctor_App](https://github.com/SteveMuiyuro/Project_Ping_A_Doctor) to run on Gunicorn and be served through Nginx.
   - [5-app_server-nginx_config](./5-app_server-nginx_config): Nginx configuration file
@@ -47,8 +47,8 @@ Upstart script to keep the application running on server reboots.
 
   - [gunicorn.conf](./gunicorn.conf): Configuration file for an Upstart script that starts a
     Gunicorn process bounded to port 5003 that serves the content from task 5.
-  - The Gunicorn process spawns three worker processes and logs errors to `/tmp/airbnb-error.log`,
-    access to `/tmp/airbnb-access.log`.
+  - The Gunicorn process spawns three worker processes and logs errors to `/Project_Ping_A_Doctor/`,
+    access to `/Project_Ping_A_Doctor/`.
 
 - **7. No service interruption**
   - [4-reload_gunicorn_no_downtime](./4-reload_gunicorn_no_downtime): Bash script that gracefully
