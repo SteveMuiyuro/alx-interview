@@ -1,4 +1,3 @@
-const button = document.getElementById("btn");
 const color1 = document.getElementById("color-one");
 const color2 = document.getElementById("color-two");
 const color3 = document.getElementById("color-three");
@@ -9,18 +8,21 @@ const colorPicked = document.getElementById("color-picker");
 const schemeSelected = document.getElementById("scheme-selector");
 
 const border = document.getElementById("container");
+const heading = document.querySelector("h1");
+const button = document.getElementById("btn");
+const colorDetails = document.getElementsByClassName("color-details");
+
 const spanOne = document.getElementById("span1");
 const spanTwo = document.getElementById("span2");
 const spanThree = document.getElementById("span3");
 const spanFour = document.getElementById("span4");
 const spanFive = document.getElementById("span5");
 
-const colorDetails = document.getElementsByClassName("color-details");
-
 button.addEventListener("click", () => {
   let colorValue = colorPicked.value.slice(1);
   let modeSelected = schemeSelected.value;
   border.style.borderBlockColor = colorPicked.value;
+  heading.style.color = colorPicked.value;
   fetch(
     `https://www.thecolorapi.com/scheme?hex=${colorValue}&mode=${modeSelected}&count=5`
   )
