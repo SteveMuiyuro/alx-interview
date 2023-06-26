@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headers {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headers > input {
+  border: 1px solid #d1d5db;
+  outline: none;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.container {
+  height: 50%;
+  width: 50vw;
+  border: 3px solid rgb(24, 23, 23);
+  border-radius: 0.5em;
+  position: relative;
+  outline: none;
+}
+
+.select-container {
+  height: 2.5em;
+  width: 12em;
+  border: 1px solid #d1d5db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+}
+
+.scheme-selector {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+button {
+  border: 1px solid #d1d5db;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.color-scheme {
+  height: 95%;
+  display: flex;
+}
+
+.color-one,
+.color-two,
+.color-three,
+.color-four,
+.color-five {
+  width: 10vw;
+  height: 80%;
+}
+
+.color-one {
+  background-color: rgb(25, 3, 46);
+}
+
+.color-two {
+  background-color: rgb(60, 12, 105);
+}
+
+.color-three {
+  background-color: rgb(97, 27, 161);
+}
+
+.color-four {
+  background-color: rgb(144, 68, 216);
+}
+
+.color-five {
+  background-color: rgb(176, 93, 253);
+}
+
+.color-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  bottom: 0.6em;
+  border-radius: 0.2em;
+}
+
+span {
+  cursor: pointer;
+}

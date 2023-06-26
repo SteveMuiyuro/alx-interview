@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color_Scheme_Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="headers">
+        <input type="color" id="color-picker" />
+        <div class="select-container">
+          <select name="" id="scheme-selector" class="scheme-selector">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-Complement</option>
+            <option value="triad">Triad</option>
+          </select>
+        </div>
+        <button id="btn">Select Scheme</button>
+      </div>
+      <div class="color-scheme">
+        <div class="color-one" id="color-one"></div>
+        <div class="color-two" id="color-two"></div>
+        <div class="color-three" id="color-three"></div>
+        <div class="color-four" id="color-four"></div>
+        <div class="color-five" id="color-five"></div>
+      </div>
+      <div class="color-details">
+        <span id="span1">#19032e</span>
+        <span id="span2">#3c0c69</span>
+        <span id="span3">#611ba1</span>
+        <span id="span4">#9044d8</span>
+        <span id="span5">#b05dfd</span>
+      </div>
+    </div>
+  </body>
+</html>
